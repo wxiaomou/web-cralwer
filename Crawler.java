@@ -59,7 +59,7 @@ public class Crawler implements Runnable {
 			try {
 				URL robotUrl = new URL("http://" + host + "/robots.txt");
 				BufferedReader reader = new BufferedReader(
-														 new InputStreamReader(robotUrl.openStream()));
+								new InputStreamReader(robotUrl.openStream()));
 				// read the file.
 				String line;
 				while ((line = reader.readLine()) != null) {
